@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--Define the main page here-->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/FinalStyles.css" type="text/css" />
+    <title>ChatMe</title>
+    
+<style>
+/*html {*/
+/*    position: relative;*/
+/*    min-height: 100%;*/
+/*}*/
+/*   body{*/
+/*       font-size: 18px;*/
+/*       margin: 0 0 100px;*/
+/*     font-family: Arial, Helvetica, san-serif;*/
+/*     background-color: lemonchiffon;*/
+/*   }*/
+/*   h1{*/
+/*       color: black; */
+/*       font-family:Tahoma, Geneva, sans-serif;*/
+/*       text-align: center;*/
+/*   }*/
+   
+/*   header{*/
+/*       background-color: palegreen;*/
+/*       height: 7rem;*/
+/*   }*/
+   
+/*   footer{*/
+/*     background-color: palegreen;*/
+/*      position: absolute;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    height: 100px;*/
+/*    width: 100%;*/
+/*      font-size: .5rem;*/
+/*   }*/
+/*   h2{*/
+/*       margin-top: 3rem;*/
+/*   }*/
+/*   .top{*/
+/*       display: flex;*/
+/*       justify-content: center;*/
+/*   }*/
+/*   .mid{*/
+/*       margin-top: 5rem;*/
+/*   }*/
+
+/*   .small{*/
+/*       color:black;*/
+/*       font-size: .8rem;*/
+/*       font-style: italic;*/
+/*       font-family: Arial, Georgia, san-serif;    */
+/*       background-color: lemonchiffon;*/
+/*   }*/
+   
+/*   form{*/
+/*       text-align: center;*/
+/*       border-color: seashell;*/
+/*   }*/
+/*    img{*/
+/*       height: 20%;*/
+/*       width: 20%;*/
+/*   }*/
+/*   .move{*/
+/*       text-align:center;*/
+/*   }*/
+
+    /*Define the animation color changing*/
+/*comment out the styles for back-up purpose*/
+</style>
+</head>
+<body>
+    
+    <header>
+      
+      <div class = "top">
+      <h1>  Welcome!</h1>
+      </div>
+      
+      
+  </header>
+  
+  <div class = "mid">
+     {% block content %}
+    <h1>This is a chatting web <span class="small"> Powered by "ChatMe"</span></h1>
+    <!--Defined the header of the index page--> 
+    
+    
+    
+<form method="post">
+    <input type="text" placeholder="Username" name="username" value="{{request.form.username}}">
+    <input type="password" placeholder="Password" name="password" value="{{request.form.password}}">
+    <input type="submit" value="login">
+</form>
+    {% if wrong %}
+    <p><strong>Invalide Input: </strong>{{wrong}}</p>
+    {% endif %}
+     {% endblock %}
+     
+     
+     </div>
+     <div class = "move">
+     <img src="/static/Q2.png"></img>
+     </div>
+     
+     <footer>
+        <div class = "top">
+      <h2> Copyright ChatMe 2016. All Rights Reserved</h2>  
+       </div> 
+    </footer>
+    
+</body>
+</html>

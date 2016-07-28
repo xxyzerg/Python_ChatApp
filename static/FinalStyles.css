@@ -1,0 +1,130 @@
+body{
+     font-size: 18px;
+     margin:0;
+     font-family: Arial, Georgia, san-serif;
+     background-color: lemonchiffon;
+   }
+   
+   header{
+       background-color: palegreen;
+       height: 7rem;
+   }
+   
+   h2{
+       margin-top: 3rem;
+   }
+   
+   footer{
+     background-color: palegreen;
+      height: 7rem; 
+      font-size: .5rem;
+      
+   }
+   h1{
+       color: black;
+       font-family:Tahoma, Geneva, sans-serif;
+       text-align: center;
+   }
+   .top{
+       display: flex;
+       justify-content: center;
+   }
+   
+   .small{
+       color:black;
+       font-size: .8rem;
+       font-style: italic;
+   }
+   
+   .mid{
+       margin-top: 5rem;
+   }
+   
+   p{
+       font-size: 1rem;
+   }
+   
+   .talk{
+       margin-bottom: 5rem;
+       text-align: center;
+   }
+   
+   #inp {
+       width: 80vw;
+       height: 10vh;
+       
+   }
+   button{
+       background-color: #8cb712;
+       width:98px;
+       height:42px;
+       font-size: 1rem;
+       display: block;
+       margin-left:auto;
+       margin-right: auto;
+       margin-top: .5rem;
+   }
+   
+  fieldset{
+     background-color: powderblue;
+     margin-left:5%;
+     margin-right:5%;
+     margin-bottom: 5%; 
+  } 
+   img{
+       height: 20%;
+       width: 20%;
+   }
+   .move{
+       text-align:center;
+   }
+   
+   html {
+    position: relative;
+    min-height: 100%;
+}
+   body{
+       font-size: 18px;
+       margin: 0 0 100px;
+     font-family: Arial, Helvetica, san-serif;
+     background-color: lemonchiffon;
+   }
+   
+   
+   footer{
+     background-color: palegreen;
+      position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+      font-size: .5rem;
+   }
+  
+   .top{
+       display: flex;
+       justify-content: center;
+   }
+   .mid{
+       margin-top: 5rem;
+   }
+
+   .small{
+       color:black;
+       font-size: .8rem;
+       font-style: italic;
+       font-family: Arial, Georgia, san-serif;    
+       background-color: lemonchiffon;
+   }
+   
+   form{
+       text-align: center;
+       border-color: seashell;
+   }
+    img{
+       height: 20%;
+       width: 20%;
+   }
+   .move{
+       text-align:center;
+   }
